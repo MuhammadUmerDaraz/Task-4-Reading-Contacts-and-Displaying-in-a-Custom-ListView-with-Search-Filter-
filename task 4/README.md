@@ -24,7 +24,7 @@ dependencies:
 Getting Started
 Installation
 Clone the Repository:
-git clone https://github.com/your-username/contacts-app.git
+git clone [https://github.com/your-username/contacts-app.git](https://github.com/MuhammadUmerDaraz/Task-4-Reading-Contacts-and-Displaying-in-a-Custom-ListView-with-Search-Filter-/tree/main/task%204 )
 
 Navigate to the Project Directory:
 cd contacts-app
