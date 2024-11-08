@@ -1,52 +1,52 @@
-# Professional Form App
+Contacts App with Real-Time Search
+This Flutter app demonstrates how to access and display contacts from a device in a custom ListView with a real-time search filter. The app is designed to provide a seamless user experience, featuring a clean UI and smooth search functionality.
 
-This Flutter application provides a professional form interface with several fields that have specific validation rules. The form includes fields for name, email, CNIC, contact number, address, and password, with validation to ensure correct data input. The app is styled with a modern UI, providing feedback on invalid input and a loading indicator during form submission.
+Purpose
+The purpose of this app is to:
 
-## Features
-- Validates multiple fields with customized error messages.
-- User-friendly interface with smooth UI interactions.
-- Input validation for each field to ensure correct format and data requirements.
-- Displays a success message upon successful form submission.
-
-## Getting Started
-
-### Prerequisites
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) installed on your machine.
-- A code editor, such as [Visual Studio Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio).
-
-### Running the App
-
-1. **Clone the Repository:**
-   ```bash
-   git clone <repository_url>
-   cd <repository_directory>
-Install Dependencies: Ensure all required Flutter packages are installed.
-
-bash
-Copy code
-flutter pub get
-Run the App:
-
-To run on an Android emulator or iOS simulator:
-bash
-Copy code
-flutter run
-To run on a connected device:
-bash
-Copy code
-flutter devices
-flutter run -d <device_id>
-Form Field Validations
-The following fields are validated with custom rules:
-
-Name: Must contain only alphabetic characters.
-Email: Must follow a valid email format.
-CNIC: Must be exactly 13 digits.
-Contact Number: Must be between 10 to 12 digits.
-Address: Required, with no specific format.
-Password: Must be at least 8 characters long, containing letters, numbers, and symbols.
+Fetch contacts from the device using permissions.
+Display contacts in a ListView with custom styling.
+Enable real-time search filtering of contacts by name.
+Requirements
+Flutter SDK: Ensure you have Flutter installed on your system.
+Permissions: The app requests permission to access contacts from the device. You will need to allow this permission for the app to function correctly.
 Dependencies
-flutter/material.dart: Provides the foundational Flutter widgets and material design.
-App Preview
-The app displays each TextField in a clean, filled style with rounded borders. It also uses a loading indicator when submitting the form.
+Add the following dependencies in your pubspec.yaml file:
 
+dependencies:
+  flutter:
+    sdk: flutter
+  contacts_service: ^0.6.2
+  permission_handler: ^10.2.0
+
+  These packages are essential for accessing device contacts and handling permissions.
+
+Getting Started
+Installation
+Clone the Repository:
+git clone https://github.com/your-username/contacts-app.git
+
+Navigate to the Project Directory:
+cd contacts-app
+
+Install Dependencies:
+flutter pub get
+
+Running the App
+Open an Emulator or Connect a Physical Device.
+Run the App:
+flutter run
+
+Grant Permissions when prompted to allow the app to access your contacts.
+Features
+Real-Time Search: Type in the search bar to filter contacts instantly.
+Custom ListView Design: Displays each contact with a circular avatar, name, and phone number.
+User-Friendly UI: Styled with a consistent color scheme and modern UI elements.
+Additional Notes
+If permissions are denied, the app will notify you to enable them for full functionality.
+Customize the color scheme or add additional contact features as desired.
+Future Enhancements
+Consider implementing:
+
+Sorting: Allow contacts to be sorted alphabetically.
+Detailed View: Tap on a contact to view full details.
